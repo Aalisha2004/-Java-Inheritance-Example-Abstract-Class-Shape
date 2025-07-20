@@ -1,51 +1,16 @@
-# -Java-Inheritance-Example-Abstract-Class-Shape
+Shape Inheritance Example in Java
+This Java program demonstrates abstract classes and inheritance using a base class Shape and two subclasses: Triangle and Rectangle.
 
-This project demonstrates the use of abstract classes, inheritance, and method overriding in Java by defining a base class Shape and its two concrete subclasses: Triangle and Rectangle.
+🔹 Classes:
+Shape: Abstract class with side, area, and perimeter. Declares calculateArea() and calculatePerimeter().
 
-🧱 Classes Overview
-Shape (abstract)
-Represents a generic shape with common properties:
+Triangle: Extends Shape, uses side and height. Calculates area and perimeter (assuming equilateral triangle).
 
-side: the base length or one side of the shape.
+Rectangle: Extends Shape, uses side (as length) and width. Calculates area and perimeter.
 
-area and perimeter: computed values.
+TestShape: Main class that creates and displays a triangle and a rectangle.
 
-Abstract methods:
-
-calculateArea()
-
-calculatePerimeter()
-
-Concrete method display() prints area and perimeter.
-
-Triangle (extends Shape)
-Represents an equilateral triangle:
-
-Uses side as the base and an additional height.
-
-Implements area using 0.5 * base * height.
-
-Assumes all sides are equal for perimeter (3 * side).
-
-Overrides display() to include class label.
-
-Rectangle (extends Shape)
-Represents a rectangle:
-
-Uses side as length and additional width.
-
-Implements area using length * width.
-
-Perimeter is calculated as 2 * (length + width).
-
-Overrides display() to include class label.
-
-TestShape (main class)
-Instantiates and tests the Triangle and Rectangle objects:
-
-Calls calculateArea(), calculatePerimeter(), and display().
-
-🧪 Sample Output
+✅ Output:
 makefile
 Copy
 Edit
@@ -55,12 +20,3 @@ Perimeter:9.0
 Rectangle:
 Area:6.0
 Perimeter:10.0
-🛠️ Key Concepts Demonstrated
-Abstract classes and methods
-
-Inheritance and constructor chaining (super)
-
-Method overriding (display, calculateArea, calculatePerimeter)
-
-Object-oriented design for geometric shapes
-
