@@ -1,4 +1,4 @@
-Shape Inheritance Example in Java
+# Shape Inheritance Example in Java
 This Java program demonstrates abstract classes and inheritance using a base class Shape and two subclasses: Triangle and Rectangle.
 
 🔹 Classes:
